@@ -14,10 +14,13 @@ konfiguracyjnym.
 
 Aplikacja na start dodaje 5 dowolnych produktów z losowaną ceną (w przedziale 50-300 zł) i wyświetla ich sumaryczną cenę.
 
-[Zadanie mające na celu użycie pliku konfiguracyjnego]
+Zadanie mające na celu użycie pliku konfiguracyjnego, w zależności od wybranego wariantu w konsoli powinny wyświetlić się odpowiednie 
+ceny produktów.
 
 ### W projekcie użyto: 
 
-* maven
+* maven 3.6.3
 * java11
 * springboot 2.6.2
+* lombook
+* jUnit5

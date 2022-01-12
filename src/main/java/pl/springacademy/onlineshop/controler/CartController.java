@@ -5,6 +5,7 @@ import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Controller;
 
 import lombok.RequiredArgsConstructor;
+import pl.springacademy.onlineshop.repository.CartRepository;
 import pl.springacademy.onlineshop.service.ShopServiceInterface;
 
 @Controller
@@ -12,6 +13,7 @@ import pl.springacademy.onlineshop.service.ShopServiceInterface;
 public class CartController {
 
     private final ShopServiceInterface shopServiceInterface;
+    private final CartRepository cartRepository;
 
     @EventListener(ApplicationReadyEvent.class)
     public void getCart() {
